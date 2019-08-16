@@ -13,6 +13,8 @@ namespace abstractions {
         address::address(const pubkey& p) : address{p.address()} {};
         
         address::address(const secret& s) : address{s.address()} {};
+
+        address::address() {};
         
         namespace bitcoin_address {
             address read(const string& base58) {

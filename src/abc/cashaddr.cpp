@@ -292,5 +292,4 @@ std::pair<std::string, data> Decode(const std::string &str,
 
     return {std::move(prefix), data(values.begin(), values.end() - 8)};
 }
-
-} 
+}

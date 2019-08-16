@@ -3,10 +3,13 @@
 
 #include <abstractions/wallet/keys.hpp>
 
-namespace abstractions {
-    
-    namespace bitcoin {
-    
+namespace abstractions::bitcoin {
+
+    secret::secret(string wif) {
+        bytes sec=data::encoding::hex::string(wif);
+        std::copy_n(sec.begin(), 32, this->begin());
+
+    };
         namespace wif {
             bool read(const string&, secret&) {
                 throw 0;
@@ -43,6 +46,4 @@ namespace abstractions {
         }
         
     }
-    
-} 
 

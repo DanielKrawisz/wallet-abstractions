@@ -7,4 +7,4 @@ endif()
 
 
 ADD_EXECUTABLE(testAbstractions  testStage1.cpp testLib.cpp )
-target_link_libraries(testAbstractions wallet-abstractions ${CRYPTOPP_LIBRARIES} ${Boost_LIBRARIES} ${LIB_BITCOIN_LIBRARIES} gmock_main)
+target_link_libraries(testAbstractions wallet-abstractions ${CRYPTOPP_LIBRARIES} ${Boost_LIBRARIES} ${LIB_BITCOIN_LIBRARIES} data gmock_main)
