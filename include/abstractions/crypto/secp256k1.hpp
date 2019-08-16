@@ -7,7 +7,7 @@
 #include <data/crypto/secp256k1.hpp>
 #include <abstractions/crypto/hash/sha256.hpp>
 #include <abstractions/crypto/hash/ripemd160.hpp>
-#include "address.hpp"
+#include <abstractions/wallet/address.hpp>
 
 namespace abstractions::secp256k1 {
     

@@ -21,9 +21,9 @@ namespace abstractions::bitcoin::cosmos::test {
         address AddressBase58;
         address AddressCashaddr;
     public:
-        one(string secret_wif, 
-            string secret_wif_uncompressed, 
-            string pubkey_hex, 
+        one(string secret_wif,
+            string secret_wif_uncompressed,
+            string pubkey_hex,
             string pubkey_hex_uncompressed,
             string addr_58,
             string cashaddr);
